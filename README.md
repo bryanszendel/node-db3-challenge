@@ -11,17 +11,17 @@
 
 For this lab you will
 
-- write SQL statements against a pre-populated database using an online tool. Once you have the correct SQL Statement for each query, write it inside the queries.md file under the appropriate heading.
-- write the db helper methods for the `schemes` resource in `./schemes/scheme-model.js`
+- [X] write SQL statements against a pre-populated database using an online tool. Once you have the correct SQL Statement for each query, write it inside the queries.md file under the appropriate heading.
+- [X] write the db helper methods for the `schemes` resource in `./schemes/scheme-model.js`
 
 ### Multi Table Queries
 
 Visit [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top) using the **Google Chrome (or Chromium if you use Linux) browser** and write _SQL queries_ for the following requirements:
 
-- Display the ProductName and CategoryName for all products in the database. Shows 76 records.
-- Display the OrderID and ShipperName for all orders placed before January 9, 1997. Shows 161 records.
-- Display all ProductNames and Quantities placed on order 10251. Sort by ProductName. Shows 3 records.
-- Display the OrderID, CustomerName and the employee's LastName for every order. All columns should be labeled clearly. Displays 196 records.
+- [X] Display the ProductName and CategoryName for all products in the database. Shows 76 records.
+- [X] Display the OrderID and ShipperName for all orders placed before January 9, 1997. Shows 161 records.
+- [X] Display all ProductNames and Quantities placed on order 10251. Sort by ProductName. Shows 3 records.
+- [X] Display the OrderID, CustomerName and the employee's LastName for every order. All columns should be labeled clearly. Displays 196 records.
 
 ### Database Methods
 
