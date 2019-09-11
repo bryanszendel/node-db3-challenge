@@ -2,6 +2,8 @@ const db = require('../data/db-config')
 
 module.exports = {
   find,
+  findById,
+
 }
 function find() {
   return db('schemes')
@@ -10,7 +12,13 @@ function find() {
     })
 }
 
-// findById(id)
+function findById(id) {
+  return db('schemes')
+    .where({id: id}).first()
+    .then(scheme => {
+      return scheme
+    })
+}
 
 // findSteps(id)
 
