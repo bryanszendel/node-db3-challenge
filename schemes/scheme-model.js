@@ -26,6 +26,7 @@ function findById(id) {
 function findSteps(id) {
   return db('steps')
     .where({scheme_id: id})
+    .orderBy('step_number')
     .then(steps => {
       return steps
     })
