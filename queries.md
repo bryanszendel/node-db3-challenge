@@ -41,4 +41,17 @@ FROM   [orders] AS o
 
 ### (Stretch)  Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
 
+SELECT c.categoryname, 
+       c.categoryid, 
+       Count(p.productid) AS [Count] 
+FROM   products AS p 
+       JOIN categories AS c 
+         ON p.categoryid = c.categoryid 
+GROUP  BY c.categoryid 
+
 ### (Stretch) Display OrderID and a  column called ItemCount that shows the total number of products placed on the order. Shows 196 records. 
+
+SELECT orderid, 
+       Sum(quantity) AS [ItemCount] 
+FROM   orderdetails 
+GROUP  BY orderid 
